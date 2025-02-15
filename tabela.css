@@ -81,7 +81,8 @@ tbody tr:last-child {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 0;
+    margin: 6px;
+    padding: 4px 8px;
     border-radius: 20%;
     border: none;
   }
