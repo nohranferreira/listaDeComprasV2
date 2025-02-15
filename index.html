@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts.js"></script>
+    <script src="mostrarDados.js"></script>
+    <script src="compartilhar.js"></script>
+    <script src="filtro.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tabela.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Formulario de Estudo</title>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <section>
+        <!-- <button class="openButton">Novo Formulario</button> -->
+        <div class="formulario">
+          <form action="">
+            <label for="">Produto</label>
+            <input type="text" id="Produto" required />
+            <label for="">Quantidade</label>
+            <input type="text" id="Quantidade" required />
+            <label for="">Setor</label>
+            <select name="" id="" required>
+              <option value="" selected disabled hidden>
+                Selecione o setor
+              </option>
+              <option value="Horti-Fruti">Horti-Fruti</option>
+              <option value="Limpeza e Higiene">Limpeza e Higiene</option>
+              <option value="Mercearia">Mercearia</option>
+              <option value="Perecíveis">Perecíveis</option>
+              <option value="Utilidade">Utilidade</option>
+            </select>
+            <label for="">Preço (R$)</label>
+            <input type="number" id="PrecoUnit" step="0.01" />
+          </form>
+        </div>
+        <div>
+          <button class="button">Salvar</button>
+        </div>
+        <img src="img/voto-positivo.png" alt="" />
+      </section>
+      <section>
+        <input
+          type="text"
+          id="campoBusca"
+          class="busca"
+          placeholder="🔍 Buscar na tabela..."
+        />
+        <button onclick="compartilharDados()">Compartilhar Dados</button>
+        <div class="compartilhar-container"></div>
+        <label for="" id="valorTotal" class="total"></label>
+        <div class="exibir-dados"></div>
+      </section>
+    </main>
+    <footer>
+      <p></p>
+    </footer>
+  </body>
+</html>

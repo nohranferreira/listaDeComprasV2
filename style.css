@@ -1,0 +1,189 @@
+body {
+  background-color: aqua;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  display: none;
+}
+
+.formulario {
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 0 0;
+}
+
+form {
+  background-color: yellow;
+  margin: 2rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px #000 solid;
+  border-radius: 1rem;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+}
+
+input,
+select,
+label {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0 6rem;
+}
+
+select {
+  width: calc(100% + 1.25rem);
+}
+
+.button,
+.openButton {
+  color: #000;
+  background-color: yellow;
+  padding: 0.75rem 5rem;
+  border: 1px #000 solid;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #000;
+  color: yellow;
+}
+
+.openButton:active {
+  background-color: #000;
+  color: yellow;
+}
+
+.button:hover {
+  background-color: #000;
+  color: yellow;
+  transition: 0.5s;
+}
+
+.openButton:hover {
+  background-color: #000;
+  color: yellow;
+  transition: 0.5s;
+}
+
+.busca {
+  margin: 1rem 0;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total {
+  width: 20%;
+  margin-top: 6px;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: yellow;
+  border: 1px #000 solid;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.iconWhatsapp {
+  font-size: 2rem; /* Tamanho do ícone */
+  color: #25d366; /* Cor do ícone */
+}
+
+/* 🌟 Responsividade 🌟 */
+@media screen and (max-width: 768px) {
+  form {
+    padding: 2rem;
+  }
+
+  .formulario {
+    width: 100%;
+  }
+
+  input,
+  select,
+  label {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  select {
+    width: calc(100% + 1.25rem);
+  }
+
+  .button,
+  .openButton {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .total {
+    width: 50%;
+    margin-top: 6px;
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: yellow;
+    border: 1px #000 solid;
+  }
+  .exibir-dados {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    padding: 1rem;
+  }
+
+  .button,
+  .openButton {
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+  }
+  .busca {
+    margin: 1rem 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .total {
+    width: 60%;
+    margin-top: 6px;
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: yellow;
+    border: 1px #000 solid;
+  }
+
+  .exibir-dados th,
+  .exibir-dados td {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  select {
+    width: calc(100% + 1.25rem);
+  }
+}
