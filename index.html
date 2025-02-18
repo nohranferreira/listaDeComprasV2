@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="scripts.js"></script>
-    <script src="mostrarDados.js"></script>
-    <script src="compartilhar.js"></script>
-    <script src="filtro.js"></script>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="tabela.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="graficoRankingTelaComLabels.js"></script>
+    <script src="scripts.js"></script>
+    <script src="mostrarDados.js"></script>
+    <script src="compartilhar.js"></script>
+    <script src="graficoRankingTela.js"></script>
+    <script src="filtro.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tabela.css" />
     <title>Lista de Compras</title>
   </head>
   <body>
@@ -45,22 +49,23 @@
           </form>
         </div>
         <div>
-          <button class="button">Salvar</button>
+          <button class="button" id="btnSalvar">Salvar</button>
+          <button class="button" onclick="compartilharDados()">
+            Compartilhar Dados
+          </button>
         </div>
         <img src="img/voto-positivo.png" alt="" />
-      </section>
-      <section>
+        <div class="compartilhar-container"></div>
         <input
           type="text"
           id="campoBusca"
           class="busca"
           placeholder="🔍 Buscar na tabela..."
         />
-        <button onclick="compartilharDados()">Compartilhar Dados</button>
-        <div class="compartilhar-container"></div>
         <label for="" id="valorTotal" class="total"></label>
         <div class="exibir-dados"></div>
       </section>
+      <section></section>
     </main>
     <footer>
       <p></p>
